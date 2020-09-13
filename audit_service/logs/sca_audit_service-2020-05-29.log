@@ -1,0 +1,81 @@
+[WARN ] 2020-05-29 08:59:30.995 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h11m17s770ms515µs).
+[INFO ] 2020-05-29 09:00:37.556 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 09:05:37.565 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 09:10:37.566 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 09:15:37.569 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 09:20:37.572 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 09:25:37.576 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[WARN ] 2020-05-29 09:33:37.379 [AMQP Connection 127.0.0.1:5672] ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
+[ERROR] 2020-05-29 09:33:37.462 [AMQP Connection 127.0.0.1:5672] CachingConnectionFactory - Channel shutdown: connection error
+[ERROR] 2020-05-29 09:33:37.470 [AMQP Connection 127.0.0.1:5672] CachingConnectionFactory - Channel shutdown: connection error
+[INFO ] 2020-05-29 09:33:37.522 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] SimpleMessageListenerContainer - Restarting Consumer@9882046: tags=[[amq.ctag-oNhruJkQkd95QlGUIg5pLA]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@3301f266 Shared Rabbit Connection: SimpleConnection@7296f268 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58184], acknowledgeMode=AUTO local queue size=0
+[INFO ] 2020-05-29 09:33:37.546 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+[INFO ] 2020-05-29 09:33:37.628 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6e194f7a:2/SimpleConnection@3c5e61d0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56970]
+[WARN ] 2020-05-29 09:34:04.332 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m473ms959µs).
+[INFO ] 2020-05-29 09:38:08.053 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 09:43:08.056 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 09:48:08.058 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[WARN ] 2020-05-29 09:58:53.260 [AMQP Connection 127.0.0.1:5672] ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
+[ERROR] 2020-05-29 09:58:53.368 [AMQP Connection 127.0.0.1:5672] CachingConnectionFactory - Channel shutdown: connection error
+[ERROR] 2020-05-29 09:58:53.372 [AMQP Connection 127.0.0.1:5672] CachingConnectionFactory - Channel shutdown: connection error
+[INFO ] 2020-05-29 09:58:53.518 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] SimpleMessageListenerContainer - Restarting Consumer@47123027: tags=[[amq.ctag-ALvROEeGYSrYMFmszn0tiw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@3301f266 Shared Rabbit Connection: SimpleConnection@3c5e61d0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56970], acknowledgeMode=AUTO local queue size=0
+[INFO ] 2020-05-29 09:58:53.534 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+[INFO ] 2020-05-29 09:58:53.574 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6e194f7a:3/SimpleConnection@7ea0eee1 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58240]
+[WARN ] 2020-05-29 09:59:09.038 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m4s628ms805µs900ns).
+[INFO ] 2020-05-29 10:01:42.687 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:06:42.688 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:11:42.693 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[WARN ] 2020-05-29 10:20:09.664 [AMQP Connection 127.0.0.1:5672] ForgivingExceptionHandler - An unexpected connection driver error occured (Exception message: Connection reset)
+[ERROR] 2020-05-29 10:20:09.692 [AMQP Connection 127.0.0.1:5672] CachingConnectionFactory - Channel shutdown: connection error
+[ERROR] 2020-05-29 10:20:09.696 [AMQP Connection 127.0.0.1:5672] CachingConnectionFactory - Channel shutdown: connection error
+[INFO ] 2020-05-29 10:20:10.621 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] SimpleMessageListenerContainer - Restarting Consumer@3cb23b5: tags=[[amq.ctag-aAOoUFTlxzFVI4jcsqZhzw]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@127.0.0.1:5672/,1), conn: Proxy@3301f266 Shared Rabbit Connection: SimpleConnection@7ea0eee1 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58240], acknowledgeMode=AUTO local queue size=0
+[INFO ] 2020-05-29 10:20:10.625 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+[INFO ] 2020-05-29 10:20:10.637 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6e194f7a:4/SimpleConnection@240bb8a4 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58907]
+[WARN ] 2020-05-29 10:20:30.040 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m50s923ms767µs300ns).
+[INFO ] 2020-05-29 10:22:03.620 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:27:03.622 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:32:03.626 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:37:03.626 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:42:03.631 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:47:03.632 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:52:03.636 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 10:57:03.639 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:02:03.642 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:07:03.644 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:12:03.648 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:17:03.652 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:22:03.656 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:27:03.658 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:32:03.664 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:37:03.666 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:42:03.667 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:47:03.670 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:52:03.671 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 11:57:03.673 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:02:03.675 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:07:03.679 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:12:03.679 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:17:03.683 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:22:03.686 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:27:03.687 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:32:03.690 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:37:03.691 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-05-29 12:39:20.318 [RMI TCP Connection(401)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-05-29 12:39:20.392 [RMI TCP Connection(401)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_AUDIT_SERVICE with eureka with status DOWN
+[WARN ] 2020-05-29 12:39:20.400 [RMI TCP Connection(401)-127.0.0.1] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1590736160397, current=DOWN, previous=UP]
+[INFO ] 2020-05-29 12:39:20.438 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_AUDIT_SERVICE/192.168.0.27:sca_audit_service:8043: registering service...
+[INFO ] 2020-05-29 12:39:20.526 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_AUDIT_SERVICE/192.168.0.27:sca_audit_service:8043 - registration status: 204
+[INFO ] 2020-05-29 12:39:20.787 [RMI TCP Connection(401)-127.0.0.1] SimpleMessageListenerContainer - Waiting for workers to finish.
+[INFO ] 2020-05-29 12:39:20.930 [RMI TCP Connection(401)-127.0.0.1] SimpleMessageListenerContainer - Successfully waited for workers to finish.
+[INFO ] 2020-05-29 12:39:21.011 [RMI TCP Connection(401)-127.0.0.1] SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+[INFO ] 2020-05-29 12:39:21.058 [RMI TCP Connection(401)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-05-29 12:39:21.225 [RMI TCP Connection(401)-127.0.0.1] DiscoveryClient - Shutting down DiscoveryClient ...
+[INFO ] 2020-05-29 12:39:24.232 [RMI TCP Connection(401)-127.0.0.1] DiscoveryClient - Unregistering ...
+[INFO ] 2020-05-29 12:39:24.253 [RMI TCP Connection(401)-127.0.0.1] DiscoveryClient - DiscoveryClient_SCA_AUDIT_SERVICE/192.168.0.27:sca_audit_service:8043 - deregister  status: 200
+[INFO ] 2020-05-29 12:39:24.286 [RMI TCP Connection(401)-127.0.0.1] DiscoveryClient - Completed shut down of DiscoveryClient
+[INFO ] 2020-05-29 12:39:24.287 [RMI TCP Connection(401)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2020-05-29 12:39:24.302 [RMI TCP Connection(401)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2020-05-29 12:39:24.341 [RMI TCP Connection(401)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8043"]
+[INFO ] 2020-05-29 12:39:24.492 [RMI TCP Connection(401)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[INFO ] 2020-05-29 12:39:24.540 [RMI TCP Connection(401)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8043"]
+[INFO ] 2020-05-29 12:39:24.549 [RMI TCP Connection(401)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8043"]

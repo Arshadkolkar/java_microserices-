@@ -1,0 +1,63 @@
+[ERROR] 2020-05-25 19:42:38.096 [restartedMain] TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthIndicatorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthIndicatorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthIndicatorRegistry]: Factory method 'healthIndicatorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthIndicator' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthIndicatorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthIndicator]: Factory method 'dbHealthIndicator' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+[ERROR] 2020-05-25 19:42:38.176 [restartedMain] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+[INFO ] 2020-05-25 19:43:55.604 [restartedMain] ScaEurekaServiceApplication - The following profiles are active: local
+[WARN ] 2020-05-25 19:43:56.936 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-05-25 19:43:57.206 [restartedMain] GenericScope - BeanFactory id=5cdd80d1-0e52-3402-bbd3-60f6cf36bbcd
+[INFO ] 2020-05-25 19:43:57.318 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2961e206] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-05-25 19:43:57.724 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8041 (http)
+[INFO ] 2020-05-25 19:43:57.738 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-05-25 19:43:57.749 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-05-25 19:43:57.750 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-05-25 19:43:57.896 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-05-25 19:43:57.896 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 2276 ms
+[WARN ] 2020-05-25 19:43:57.988 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-05-25 19:43:57.989 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-05-25 19:43:58.001 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@78b1c140
+[INFO ] 2020-05-25 19:43:58.843 [restartedMain] WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[WARN ] 2020-05-25 19:43:59.347 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-05-25 19:43:59.347 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-05-25 19:43:59.527 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[WARN ] 2020-05-25 19:43:59.971 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-05-25 19:44:00.324 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-05-25 19:44:00.419 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-05-25 19:44:00.594 [restartedMain] EurekaServiceRegistry - Registering application SCA_EUREKA_SERVICE with eureka with status UP
+[INFO ] 2020-05-25 19:44:00.598 [Thread-14] EurekaServerBootstrap - Setting the eureka configuration..
+[INFO ] 2020-05-25 19:44:00.599 [Thread-14] EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+[INFO ] 2020-05-25 19:44:00.601 [Thread-14] EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+[INFO ] 2020-05-25 19:44:00.615 [Thread-14] EurekaServerBootstrap - isAws returned false
+[INFO ] 2020-05-25 19:44:00.616 [Thread-14] EurekaServerBootstrap - Initialized server context
+[INFO ] 2020-05-25 19:44:00.618 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-05-25 19:44:00.625 [Thread-14] EurekaServerInitializerConfiguration - Started Eureka Server
+[INFO ] 2020-05-25 19:44:00.644 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8041 (http) with context path ''
+[INFO ] 2020-05-25 19:44:00.645 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8041
+[INFO ] 2020-05-25 19:44:00.647 [restartedMain] ScaEurekaServiceApplication - Started ScaEurekaServiceApplication in 6.317 seconds (JVM running for 7.638)
+[INFO ] 2020-05-25 19:44:00.656 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication started..............
+[INFO ] 2020-05-25 19:44:01.006 [http-nio-8041-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-05-25 19:44:01.006 [http-nio-8041-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-05-25 19:44:01.014 [http-nio-8041-exec-1] DispatcherServlet - Completed initialization in 7 ms
+[INFO ] 2020-05-25 21:02:27.368 [RMI TCP Connection(87)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-05-25 21:02:27.391 [RMI TCP Connection(87)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_EUREKA_SERVICE with eureka with status DOWN
+[INFO ] 2020-05-25 21:02:27.481 [RMI TCP Connection(87)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-05-25 21:02:27.519 [RMI TCP Connection(87)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-05-25 21:02:27.653 [RMI TCP Connection(87)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[INFO ] 2020-05-25 21:02:27.663 [RMI TCP Connection(87)-127.0.0.1] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-05-25 21:02:27.748 [RMI TCP Connection(87)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-05-25 21:02:27.752 [RMI TCP Connection(87)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8041"]

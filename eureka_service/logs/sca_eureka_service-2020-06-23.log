@@ -1,0 +1,215 @@
+[INFO ] 2020-06-23 13:07:34.460 [restartedMain] ScaEurekaServiceApplication - The following profiles are active: local
+[WARN ] 2020-06-23 13:07:35.687 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-06-23 13:07:35.940 [restartedMain] GenericScope - BeanFactory id=5cdd80d1-0e52-3402-bbd3-60f6cf36bbcd
+[INFO ] 2020-06-23 13:07:36.040 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2019ea07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-23 13:07:36.520 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8041 (http)
+[INFO ] 2020-06-23 13:07:36.537 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:07:36.551 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-23 13:07:36.551 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-23 13:07:36.719 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-23 13:07:36.719 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 2239 ms
+[WARN ] 2020-06-23 13:07:36.848 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:07:36.849 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:07:36.875 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@66950024
+[INFO ] 2020-06-23 13:07:37.978 [restartedMain] WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[WARN ] 2020-06-23 13:07:38.620 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:07:38.620 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:07:38.832 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[WARN ] 2020-06-23 13:07:39.349 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-06-23 13:07:39.779 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-23 13:07:39.907 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-23 13:07:40.106 [restartedMain] EurekaServiceRegistry - Registering application SCA_EUREKA_SERVICE with eureka with status UP
+[INFO ] 2020-06-23 13:07:40.110 [Thread-14] EurekaServerBootstrap - Setting the eureka configuration..
+[INFO ] 2020-06-23 13:07:40.111 [Thread-14] EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+[INFO ] 2020-06-23 13:07:40.111 [Thread-14] EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+[INFO ] 2020-06-23 13:07:40.122 [Thread-14] EurekaServerBootstrap - isAws returned false
+[INFO ] 2020-06-23 13:07:40.122 [Thread-14] EurekaServerBootstrap - Initialized server context
+[INFO ] 2020-06-23 13:07:40.124 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:07:40.131 [Thread-14] EurekaServerInitializerConfiguration - Started Eureka Server
+[INFO ] 2020-06-23 13:07:40.154 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8041 (http) with context path ''
+[INFO ] 2020-06-23 13:07:40.155 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8041
+[INFO ] 2020-06-23 13:07:40.157 [restartedMain] ScaEurekaServiceApplication - Started ScaEurekaServiceApplication in 7.605 seconds (JVM running for 9.101)
+[INFO ] 2020-06-23 13:07:40.167 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication started..............
+[INFO ] 2020-06-23 13:07:52.976 [http-nio-8041-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:07:52.976 [http-nio-8041-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:07:52.984 [http-nio-8041-exec-1] DispatcherServlet - Completed initialization in 8 ms
+[INFO ] 2020-06-23 13:08:43.900 [RMI TCP Connection(9)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-06-23 13:08:43.901 [RMI TCP Connection(9)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_EUREKA_SERVICE with eureka with status DOWN
+[INFO ] 2020-06-23 13:08:43.914 [RMI TCP Connection(9)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:08:43.921 [RMI TCP Connection(9)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:08:44.075 [RMI TCP Connection(9)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[INFO ] 2020-06-23 13:08:44.079 [RMI TCP Connection(9)-127.0.0.1] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:08:44.114 [RMI TCP Connection(9)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:08:44.118 [RMI TCP Connection(9)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:08:51.380 [restartedMain] ScaEurekaServiceApplication - The following profiles are active: local
+[WARN ] 2020-06-23 13:08:53.077 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-06-23 13:08:53.396 [restartedMain] GenericScope - BeanFactory id=5cdd80d1-0e52-3402-bbd3-60f6cf36bbcd
+[INFO ] 2020-06-23 13:08:53.540 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$99b2a2fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-23 13:08:54.157 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8041 (http)
+[INFO ] 2020-06-23 13:08:54.183 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:08:54.199 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-23 13:08:54.200 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-23 13:08:54.486 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-23 13:08:54.487 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 3090 ms
+[WARN ] 2020-06-23 13:08:54.781 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:08:54.782 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:08:54.807 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3e96f03
+[INFO ] 2020-06-23 13:08:57.439 [restartedMain] WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[WARN ] 2020-06-23 13:08:58.544 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:08:58.544 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:08:58.839 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:08:59.518 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-06-23 13:09:00.119 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-23 13:09:00.365 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-23 13:09:00.622 [restartedMain] EurekaServiceRegistry - Registering application SCA_EUREKA_SERVICE with eureka with status UP
+[INFO ] 2020-06-23 13:09:00.628 [Thread-16] EurekaServerBootstrap - Setting the eureka configuration..
+[INFO ] 2020-06-23 13:09:00.629 [Thread-16] EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+[INFO ] 2020-06-23 13:09:00.630 [Thread-16] EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+[INFO ] 2020-06-23 13:09:00.643 [Thread-16] EurekaServerBootstrap - isAws returned false
+[INFO ] 2020-06-23 13:09:00.643 [Thread-16] EurekaServerBootstrap - Initialized server context
+[INFO ] 2020-06-23 13:09:00.645 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:09:00.654 [Thread-16] EurekaServerInitializerConfiguration - Started Eureka Server
+[INFO ] 2020-06-23 13:09:00.692 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8041 (http) with context path ''
+[INFO ] 2020-06-23 13:09:00.693 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8041
+[INFO ] 2020-06-23 13:09:00.696 [restartedMain] ScaEurekaServiceApplication - Started ScaEurekaServiceApplication in 10.802 seconds (JVM running for 12.51)
+[INFO ] 2020-06-23 13:09:00.707 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication started..............
+[INFO ] 2020-06-23 13:09:12.277 [http-nio-8041-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:09:12.277 [http-nio-8041-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:09:12.286 [http-nio-8041-exec-1] DispatcherServlet - Completed initialization in 9 ms
+[INFO ] 2020-06-23 13:11:53.062 [Thread-8] EurekaServiceRegistry - Unregistering application SCA_EUREKA_SERVICE with eureka with status DOWN
+[INFO ] 2020-06-23 13:11:53.077 [Thread-8] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:11:53.418 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication is starting..............
+[INFO ] 2020-06-23 13:11:54.064 [restartedMain] ScaEurekaServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-23 13:11:55.039 [restartedMain] GenericScope - BeanFactory id=5cdd80d1-0e52-3402-bbd3-60f6cf36bbcd
+[INFO ] 2020-06-23 13:11:55.065 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$99b2a2fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-23 13:11:55.159 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8041 (http)
+[INFO ] 2020-06-23 13:11:55.163 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:11:55.164 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-23 13:11:55.164 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-23 13:11:55.218 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-23 13:11:55.218 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 1150 ms
+[INFO ] 2020-06-23 13:11:55.903 [restartedMain] WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[WARN ] 2020-06-23 13:11:56.205 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:11:56.205 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:11:56.294 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:11:56.500 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-06-23 13:11:56.743 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-23 13:11:56.765 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-23 13:11:56.813 [restartedMain] EurekaServiceRegistry - Registering application SCA_EUREKA_SERVICE with eureka with status UP
+[INFO ] 2020-06-23 13:11:56.815 [Thread-32] EurekaServerBootstrap - Setting the eureka configuration..
+[INFO ] 2020-06-23 13:11:56.815 [Thread-32] EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+[INFO ] 2020-06-23 13:11:56.816 [Thread-32] EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+[INFO ] 2020-06-23 13:11:56.816 [Thread-32] EurekaServerBootstrap - isAws returned false
+[INFO ] 2020-06-23 13:11:56.816 [Thread-32] EurekaServerBootstrap - Initialized server context
+[INFO ] 2020-06-23 13:11:56.820 [Thread-32] EurekaServerInitializerConfiguration - Started Eureka Server
+[INFO ] 2020-06-23 13:11:56.824 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:11:56.829 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8041 (http) with context path ''
+[INFO ] 2020-06-23 13:11:56.830 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8041
+[INFO ] 2020-06-23 13:11:56.831 [restartedMain] ScaEurekaServiceApplication - Started ScaEurekaServiceApplication in 3.403 seconds (JVM running for 188.647)
+[INFO ] 2020-06-23 13:11:56.839 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2020-06-23 13:11:56.840 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication started..............
+[INFO ] 2020-06-23 13:12:17.519 [http-nio-8041-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:12:17.519 [http-nio-8041-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:12:17.526 [http-nio-8041-exec-1] DispatcherServlet - Completed initialization in 7 ms
+[INFO ] 2020-06-23 13:14:23.409 [Thread-19] EurekaServiceRegistry - Unregistering application SCA_EUREKA_SERVICE with eureka with status DOWN
+[INFO ] 2020-06-23 13:14:23.414 [Thread-19] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:14:23.701 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication is starting..............
+[INFO ] 2020-06-23 13:14:24.373 [restartedMain] ScaEurekaServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-23 13:14:25.318 [restartedMain] GenericScope - BeanFactory id=5cdd80d1-0e52-3402-bbd3-60f6cf36bbcd
+[INFO ] 2020-06-23 13:14:25.344 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$99b2a2fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-23 13:14:25.445 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8041 (http)
+[INFO ] 2020-06-23 13:14:25.457 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:14:25.457 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-23 13:14:25.458 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-23 13:14:25.494 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-23 13:14:25.494 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 1119 ms
+[INFO ] 2020-06-23 13:14:26.068 [restartedMain] WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[WARN ] 2020-06-23 13:14:26.277 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:14:26.278 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:14:26.369 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:14:26.609 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-06-23 13:14:26.891 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-23 13:14:26.923 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-23 13:14:26.984 [restartedMain] EurekaServiceRegistry - Registering application SCA_EUREKA_SERVICE with eureka with status UP
+[INFO ] 2020-06-23 13:14:26.986 [Thread-48] EurekaServerBootstrap - Setting the eureka configuration..
+[INFO ] 2020-06-23 13:14:26.989 [Thread-48] EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+[INFO ] 2020-06-23 13:14:26.989 [Thread-48] EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+[INFO ] 2020-06-23 13:14:26.990 [Thread-48] EurekaServerBootstrap - isAws returned false
+[INFO ] 2020-06-23 13:14:26.991 [Thread-48] EurekaServerBootstrap - Initialized server context
+[INFO ] 2020-06-23 13:14:26.997 [Thread-48] EurekaServerInitializerConfiguration - Started Eureka Server
+[INFO ] 2020-06-23 13:14:27.000 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:14:27.006 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8041 (http) with context path ''
+[INFO ] 2020-06-23 13:14:27.008 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8041
+[INFO ] 2020-06-23 13:14:27.009 [restartedMain] ScaEurekaServiceApplication - Started ScaEurekaServiceApplication in 3.293 seconds (JVM running for 338.824)
+[INFO ] 2020-06-23 13:14:27.020 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2020-06-23 13:14:27.021 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication started..............
+[INFO ] 2020-06-23 13:14:47.644 [http-nio-8041-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:14:47.644 [http-nio-8041-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:14:47.650 [http-nio-8041-exec-1] DispatcherServlet - Completed initialization in 6 ms
+[INFO ] 2020-06-23 13:39:22.016 [Thread-35] EurekaServiceRegistry - Unregistering application SCA_EUREKA_SERVICE with eureka with status DOWN
+[INFO ] 2020-06-23 13:39:22.039 [Thread-35] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:39:22.370 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication is starting..............
+[INFO ] 2020-06-23 13:39:23.079 [restartedMain] ScaEurekaServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-23 13:39:24.044 [restartedMain] GenericScope - BeanFactory id=5cdd80d1-0e52-3402-bbd3-60f6cf36bbcd
+[INFO ] 2020-06-23 13:39:24.072 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$99b2a2fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-23 13:39:24.189 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8041 (http)
+[INFO ] 2020-06-23 13:39:24.204 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:39:24.205 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-23 13:39:24.205 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-23 13:39:24.243 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-23 13:39:24.243 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 1161 ms
+[INFO ] 2020-06-23 13:39:24.957 [restartedMain] WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[WARN ] 2020-06-23 13:39:25.155 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:39:25.155 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:39:25.244 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:39:25.436 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-06-23 13:39:25.661 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-23 13:39:25.681 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-23 13:39:25.752 [restartedMain] EurekaServiceRegistry - Registering application SCA_EUREKA_SERVICE with eureka with status UP
+[INFO ] 2020-06-23 13:39:25.754 [Thread-64] EurekaServerBootstrap - Setting the eureka configuration..
+[INFO ] 2020-06-23 13:39:25.755 [Thread-64] EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+[INFO ] 2020-06-23 13:39:25.755 [Thread-64] EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+[INFO ] 2020-06-23 13:39:25.755 [Thread-64] EurekaServerBootstrap - isAws returned false
+[INFO ] 2020-06-23 13:39:25.756 [Thread-64] EurekaServerBootstrap - Initialized server context
+[INFO ] 2020-06-23 13:39:25.761 [Thread-64] EurekaServerInitializerConfiguration - Started Eureka Server
+[INFO ] 2020-06-23 13:39:25.765 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:39:25.768 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8041 (http) with context path ''
+[INFO ] 2020-06-23 13:39:25.768 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8041
+[INFO ] 2020-06-23 13:39:25.771 [restartedMain] ScaEurekaServiceApplication - Started ScaEurekaServiceApplication in 3.382 seconds (JVM running for 1837.586)
+[INFO ] 2020-06-23 13:39:25.777 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2020-06-23 13:39:25.778 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication started..............
+[INFO ] 2020-06-23 13:39:42.342 [Thread-51] EurekaServiceRegistry - Unregistering application SCA_EUREKA_SERVICE with eureka with status DOWN
+[INFO ] 2020-06-23 13:39:42.349 [Thread-51] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:39:42.600 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication is starting..............
+[INFO ] 2020-06-23 13:39:43.305 [restartedMain] ScaEurekaServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-23 13:39:44.287 [restartedMain] GenericScope - BeanFactory id=5cdd80d1-0e52-3402-bbd3-60f6cf36bbcd
+[INFO ] 2020-06-23 13:39:44.307 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$99b2a2fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-23 13:39:44.395 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8041 (http)
+[INFO ] 2020-06-23 13:39:44.412 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:39:44.413 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-23 13:39:44.414 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-23 13:39:44.447 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-23 13:39:44.447 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 1136 ms
+[INFO ] 2020-06-23 13:39:45.026 [restartedMain] WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[WARN ] 2020-06-23 13:39:45.210 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-23 13:39:45.210 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-23 13:39:45.297 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-23 13:39:45.513 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-06-23 13:39:45.749 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-23 13:39:45.765 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-23 13:39:45.814 [restartedMain] EurekaServiceRegistry - Registering application SCA_EUREKA_SERVICE with eureka with status UP
+[INFO ] 2020-06-23 13:39:45.815 [Thread-80] EurekaServerBootstrap - Setting the eureka configuration..
+[INFO ] 2020-06-23 13:39:45.815 [Thread-80] EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+[INFO ] 2020-06-23 13:39:45.816 [Thread-80] EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+[INFO ] 2020-06-23 13:39:45.816 [Thread-80] EurekaServerBootstrap - isAws returned false
+[INFO ] 2020-06-23 13:39:45.816 [Thread-80] EurekaServerBootstrap - Initialized server context
+[INFO ] 2020-06-23 13:39:45.819 [Thread-80] EurekaServerInitializerConfiguration - Started Eureka Server
+[INFO ] 2020-06-23 13:39:45.825 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-23 13:39:45.830 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8041 (http) with context path ''
+[INFO ] 2020-06-23 13:39:45.831 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8041
+[INFO ] 2020-06-23 13:39:45.833 [restartedMain] ScaEurekaServiceApplication - Started ScaEurekaServiceApplication in 3.224 seconds (JVM running for 1857.648)
+[INFO ] 2020-06-23 13:39:45.840 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2020-06-23 13:39:45.841 [restartedMain] ScaEurekaServiceApplication - EurekaServiceApplication started..............
+[INFO ] 2020-06-23 13:40:12.196 [http-nio-8041-exec-2] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:40:12.197 [http-nio-8041-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-06-23 13:40:12.205 [http-nio-8041-exec-2] DispatcherServlet - Completed initialization in 8 ms

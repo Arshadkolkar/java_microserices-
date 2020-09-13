@@ -1,0 +1,28 @@
+[INFO ] 2020-08-05 11:02:22.298 [restartedMain] ScaSecurityServiceApplication - The following profiles are active: local
+[WARN ] 2020-08-05 11:02:28.757 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-08-05 11:02:29.296 [restartedMain] GenericScope - BeanFactory id=df453d55-83b6-3def-936c-2b132910303e
+[INFO ] 2020-08-05 11:02:29.785 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a15b0c26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-08-05 11:02:30.160 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bd750f23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-08-05 11:02:31.633 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8044 (http)
+[INFO ] 2020-08-05 11:02:32.070 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 9509 ms
+[INFO ] 2020-08-05 11:02:36.500 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-08-05 11:02:36.840 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-08-05 11:02:36.847 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-08-05 11:02:37.497 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-08-05 11:02:37.852 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2020-08-05 11:02:38.155 [restartedMain] LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO ] 2020-08-05 11:02:38.171 [restartedMain] BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@36bd16f3
+[INFO ] 2020-08-05 11:02:43.191 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-08-05 11:02:43.508 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2020-08-05 11:02:45.956 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2020-08-05 11:02:54.674 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-08-05 11:02:54.967 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-08-05 11:03:01.386 [restartedMain] EurekaServiceRegistry - Registering application SCA_SECURITY_SERVICE with eureka with status UP
+[INFO ] 2020-08-05 11:03:01.566 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8044 (http) with context path ''
+[INFO ] 2020-08-05 11:03:01.568 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8044
+[INFO ] 2020-08-05 11:03:01.587 [restartedMain] ScaSecurityServiceApplication - Started ScaSecurityServiceApplication in 44.591 seconds (JVM running for 49.109)
+[INFO ] 2020-08-05 11:08:08.018 [RMI TCP Connection(14)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-08-05 11:08:08.021 [RMI TCP Connection(14)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_SECURITY_SERVICE with eureka with status DOWN
+[INFO ] 2020-08-05 11:08:08.068 [RMI TCP Connection(14)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

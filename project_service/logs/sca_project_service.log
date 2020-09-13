@@ -1,0 +1,105 @@
+[INFO ] 2020-07-01 12:43:37.127 [restartedMain] ScaProjectServiceApplication - The following profiles are active: local
+[INFO ] 2020-07-01 12:43:43.021 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-07-01 12:43:43.378 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 346ms. Found 1 repository interfaces.
+[WARN ] 2020-07-01 12:43:43.975 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-07-01 12:43:44.415 [restartedMain] GenericScope - BeanFactory id=6584b243-71f3-35ec-85bf-40ce6931451c
+[INFO ] 2020-07-01 12:43:44.590 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b0c23ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-07-01 12:43:44.772 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a72626ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-07-01 12:43:48.109 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8050 (http)
+[INFO ] 2020-07-01 12:43:48.352 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8050"]
+[INFO ] 2020-07-01 12:43:48.542 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-07-01 12:43:48.543 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-07-01 12:43:48.968 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-07-01 12:43:48.969 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 11602 ms
+[WARN ] 2020-07-01 12:43:49.229 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-07-01 12:43:49.230 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-07-01 12:43:49.271 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@bbd54e0
+[INFO ] 2020-07-01 12:43:51.488 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-07-01 12:43:52.642 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-07-01 12:43:52.878 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-07-01 12:43:53.065 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-07-01 12:43:53.068 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-07-01 12:43:53.582 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-07-01 12:43:53.929 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2020-07-01 12:43:54.332 [restartedMain] LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO ] 2020-07-01 12:43:54.339 [restartedMain] BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@9f57b11
+[INFO ] 2020-07-01 12:43:56.243 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2020-07-01 12:43:57.555 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2020-07-01 12:43:58.212 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-07-01 12:43:58.226 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN ] 2020-07-01 12:43:59.370 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-07-01 12:43:59.848 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-07-01 12:44:00.086 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-07-01 12:44:00.162 [restartedMain] DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2020-07-01 12:44:00.573 [restartedMain] DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2020-07-01 12:44:00.573 [restartedMain] DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2020-07-01 12:44:00.784 [restartedMain] DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2020-07-01 12:44:00.784 [restartedMain] DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2020-07-01 12:44:01.012 [restartedMain] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 12:44:01.246 [restartedMain] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-07-01 12:44:01.247 [restartedMain] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-07-01 12:44:01.247 [restartedMain] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-07-01 12:44:01.247 [restartedMain] DiscoveryClient - Application is null : false
+[INFO ] 2020-07-01 12:44:01.247 [restartedMain] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-07-01 12:44:01.248 [restartedMain] DiscoveryClient - Application version is -1: true
+[INFO ] 2020-07-01 12:44:01.248 [restartedMain] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-07-01 12:44:01.534 [restartedMain] DiscoveryClient - The response status is 200
+[INFO ] 2020-07-01 12:44:01.540 [restartedMain] DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2020-07-01 12:44:01.543 [restartedMain] InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2020-07-01 12:44:01.599 [restartedMain] DiscoveryClient - Discovery Client initialized at timestamp 1593587641545 with initial instances count: 1
+[INFO ] 2020-07-01 12:44:01.618 [restartedMain] EurekaServiceRegistry - Registering application SCA_PROJECT_SERVICE with eureka with status UP
+[INFO ] 2020-07-01 12:44:01.619 [restartedMain] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1593587641619, current=UP, previous=STARTING]
+[INFO ] 2020-07-01 12:44:01.624 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_PROJECT_SERVICE/DESKTOP-QE5V47F:sca_project_service:8050: registering service...
+[INFO ] 2020-07-01 12:44:01.716 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8050"]
+[INFO ] 2020-07-01 12:44:02.190 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_PROJECT_SERVICE/DESKTOP-QE5V47F:sca_project_service:8050 - registration status: 204
+[INFO ] 2020-07-01 12:44:02.511 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8050 (http) with context path ''
+[INFO ] 2020-07-01 12:44:02.512 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8050
+[INFO ] 2020-07-01 12:44:02.516 [restartedMain] ScaProjectServiceApplication - Started ScaProjectServiceApplication in 30.45 seconds (JVM running for 44.951)
+[INFO ] 2020-07-01 12:44:03.034 [RMI TCP Connection(3)-127.0.0.1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-07-01 12:44:03.034 [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-07-01 12:44:03.053 [RMI TCP Connection(3)-127.0.0.1] DispatcherServlet - Completed initialization in 19 ms
+[INFO ] 2020-07-01 12:49:01.251 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 12:54:01.253 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 12:59:01.256 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:04:01.259 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:09:01.260 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:14:01.263 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:19:01.264 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:24:01.266 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:29:01.268 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:34:01.270 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:39:01.272 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:44:01.276 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:49:01.277 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:54:01.280 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 13:59:01.282 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:04:01.284 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:09:01.286 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:14:01.289 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:19:01.291 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:24:01.293 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:29:01.295 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:34:01.296 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:39:01.299 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:44:01.301 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:49:01.302 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:54:01.304 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 14:59:01.306 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:04:01.309 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:09:01.312 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:14:01.314 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:19:01.316 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:24:01.318 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:29:01.320 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:34:01.393 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:39:01.394 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:44:01.397 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:49:01.400 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:54:01.402 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 15:59:01.404 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 16:04:01.458 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 16:09:01.460 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 16:14:01.462 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-07-01 16:19:01.463 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration

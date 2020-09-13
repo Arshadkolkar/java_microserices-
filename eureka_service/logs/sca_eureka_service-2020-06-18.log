@@ -1,0 +1,8 @@
+[INFO ] 2020-06-18 12:33:49.463 [RMI TCP Connection(643)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-06-18 12:33:49.630 [RMI TCP Connection(643)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_EUREKA_SERVICE with eureka with status DOWN
+[INFO ] 2020-06-18 12:33:50.151 [RMI TCP Connection(643)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2020-06-18 12:33:50.324 [RMI TCP Connection(643)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-18 12:33:50.550 [RMI TCP Connection(643)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[INFO ] 2020-06-18 12:33:50.583 [RMI TCP Connection(643)-127.0.0.1] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-06-18 12:33:50.862 [RMI TCP Connection(643)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8041"]
+[INFO ] 2020-06-18 12:33:50.872 [RMI TCP Connection(643)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8041"]

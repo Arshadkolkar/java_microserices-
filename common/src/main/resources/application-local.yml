@@ -1,0 +1,100 @@
+
+spring:
+################## MESSAGE QUEUE CONFIGURATION ##################
+  rabbitmq:
+    host: 127.0.0.1 
+    port: 5672 
+    username: guest 
+    password: guest
+    
+################## MULTIPART CONFIGURATION ##################    
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+      
+############### LOAD BALANCER CONFIGURATION ###############
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
+  eureka:
+    enabled: true 
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: heapdump,health
+        
+################## MESSAGE QUEUE PROPERTIES ##################
+message:
+  message-exchanges:
+    audit-service: exchange.audit.service
+    email-service: exchange.email.service
+    metering-service: exchange.metering.service
+    mailcampaign-service: exchange.mailcampaign.service
+    dataload: exchange.dataload 
+  message-queues:
+    audit-service: queue.audit.service
+    email-service: queue.email.service
+    metering-service: queue.metering.service
+    mailcampaign-service: queue.mailcampaign.service
+    dataload: exchange.dataload  
+  
+################## LOGGING CONFIGURATION #################
+logger:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sca_audit_db
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    validation-query: SELECT 1
+  appender:
+    level: WARN
+    name: DB
+    table-name: application_log  
+  
+logging:
+  level:
+    root: INFO
+    com.sca: DEBUG
+    org.springframework.web: INFO
+    org.springframework.cache: TRACE
+    com.zaxxer.hikari: INFO
+    
+################## ERROR CODES ##################
+errorcode:
+  generic: An unknown error has occurred. Reason- %s.
+  invalid-input: Reason- %s.
+  duplicate-name: An entity with %s, %s, already exists in the database.
+  dependency: Unable to delete %s with id = %d, since it depends on %s entity.  
+  unauthorized: Reason- %s.
+  unprocessable-entity: Reason- %s.
+
+################## ENCRYPTION ##################  
+encryption:
+  key: C@n(Ep7U^1l3aRn1N9
+
+################## FILE SERVICE ##################  
+fileservice:
+  base-path: C:\\sierra\\fileUpload\\
+  root-folder: C:\\sierra\\fileUpload\\
+  file-exchange-folder: fileExchange
+  file-exchange-folder-prefix: file_exchange_
+  
+################## APP PARAMS ##################
+main-param:
+  environment: DEV 
+  default-email: no-reply@mykukun.com
+  contact-email: contact@mykukun.com
+  web-app-url: http://appdev.sca.com/
+  magazine-url: https://blogdev.sca.com/api/
+  magazine-web-url: http://blogdev.sca.com/
+  magazine-ssl-web-url: https://blogdev.sca.com/
+  sca-main-url: https://dev.sca.com/
+  google-map-key: AIzaSyCsij1cQ0SG_aV97k3OJ_-fP62NeZ1aQfo
+  magazine-admin-user: sca
+  magazine-admin-pass: aCc3s0'v4Lid0
+  ip-stack-url: http://api.ipstack.com/
+  ip-stack-key: b3ced2146d1c75ee87747543761ea782
+  

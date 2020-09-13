@@ -1,0 +1,767 @@
+[INFO ] 2020-06-02 08:18:10.883 [restartedMain] ScaZuulServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-02 08:18:11.793 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-06-02 08:18:11.803 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+[WARN ] 2020-06-02 08:18:12.146 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[WARN ] 2020-06-02 08:18:12.160 [restartedMain] EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-06-02 08:18:12.359 [restartedMain] GenericScope - BeanFactory id=e40757f5-e351-3df1-9e22-cc40816e3eec
+[INFO ] 2020-06-02 08:18:12.474 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$783c7860] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:18:12.609 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$94567b5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:18:13.110 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8042 (https)
+[INFO ] 2020-06-02 08:18:13.128 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:18:13.141 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-02 08:18:13.142 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-02 08:18:13.299 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-02 08:18:13.299 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 2391 ms
+[WARN ] 2020-06-02 08:18:13.432 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:18:13.433 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-02 08:18:13.445 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6ec7885f
+[INFO ] 2020-06-02 08:18:14.902 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-06-02 08:18:21.791 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-06-02 08:18:21.855 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-06-02 08:18:21.959 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-06-02 08:18:21.961 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-06-02 08:18:22.164 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-06-02 08:18:22.279 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO ] 2020-06-02 08:18:22.926 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2020-06-02 08:18:23.133 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2020-06-02 08:18:23.473 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:18:23.479 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN ] 2020-06-02 08:18:24.177 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-06-02 08:18:24.412 [restartedMain] ZuulFilterInitializer - Starting filter initializer
+[INFO ] 2020-06-02 08:18:24.432 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-02 08:18:24.555 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-02 08:18:24.588 [restartedMain] DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2020-06-02 08:18:24.626 [restartedMain] DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:18:24.626 [restartedMain] DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:18:24.735 [restartedMain] DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2020-06-02 08:18:24.735 [restartedMain] DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2020-06-02 08:18:24.887 [restartedMain] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-06-02 08:18:25.057 [restartedMain] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 08:18:25.057 [restartedMain] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 08:18:25.057 [restartedMain] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 08:18:25.057 [restartedMain] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 08:18:25.057 [restartedMain] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 08:18:25.057 [restartedMain] DiscoveryClient - Application version is -1: true
+[INFO ] 2020-06-02 08:18:25.057 [restartedMain] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 08:18:25.239 [restartedMain] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 08:18:25.241 [restartedMain] DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2020-06-02 08:18:25.243 [restartedMain] InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2020-06-02 08:18:25.247 [restartedMain] DiscoveryClient - Discovery Client initialized at timestamp 1591066105245 with initial instances count: 0
+[INFO ] 2020-06-02 08:18:25.257 [restartedMain] EurekaServiceRegistry - Registering application SCA_ZUUL_SERVICE with eureka with status UP
+[INFO ] 2020-06-02 08:18:25.258 [restartedMain] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591066105258, current=UP, previous=STARTING]
+[INFO ] 2020-06-02 08:18:25.260 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:18:25.275 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:18:25.353 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 08:18:25.518 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8042 (https) with context path ''
+[INFO ] 2020-06-02 08:18:25.519 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8042
+[INFO ] 2020-06-02 08:18:25.521 [restartedMain] ScaZuulServiceApplication - Started ScaZuulServiceApplication in 15.758 seconds (JVM running for 16.868)
+[INFO ] 2020-06-02 08:18:55.242 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 08:18:55.243 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 08:18:55.243 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 08:18:55.243 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 08:18:55.243 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 08:18:55.243 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application version is -1: false
+[INFO ] 2020-06-02 08:18:55.243 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 08:18:55.279 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 08:23:25.061 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-06-02 08:24:03.542 [RMI TCP Connection(16)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-06-02 08:24:03.543 [RMI TCP Connection(16)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_ZUUL_SERVICE with eureka with status DOWN
+[WARN ] 2020-06-02 08:24:03.543 [RMI TCP Connection(16)-127.0.0.1] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591066443543, current=DOWN, previous=UP]
+[INFO ] 2020-06-02 08:24:03.552 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:24:03.557 [RMI TCP Connection(16)-127.0.0.1] ZuulFilterInitializer - Stopping filter initializer
+[INFO ] 2020-06-02 08:24:03.578 [RMI TCP Connection(16)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-06-02 08:24:03.585 [RMI TCP Connection(16)-127.0.0.1] DiscoveryClient - Shutting down DiscoveryClient ...
+[ERROR] 2020-06-02 08:24:05.579 [DiscoveryClient-InstanceInfoReplicator-0] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 28 more
+[WARN ] 2020-06-02 08:24:05.593 [DiscoveryClient-InstanceInfoReplicator-0] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[INFO ] 2020-06-02 08:24:06.587 [RMI TCP Connection(16)-127.0.0.1] DiscoveryClient - Unregistering ...
+[ERROR] 2020-06-02 08:24:07.611 [DiscoveryClient-InstanceInfoReplicator-0] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 29 more
+[WARN ] 2020-06-02 08:24:07.618 [DiscoveryClient-InstanceInfoReplicator-0] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[WARN ] 2020-06-02 08:24:07.623 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[WARN ] 2020-06-02 08:24:07.628 [DiscoveryClient-InstanceInfoReplicator-0] InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2020-06-02 08:24:08.611 [RMI TCP Connection(16)-127.0.0.1] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901) ~[eureka-client-1.9.8.jar:1.9.8]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:404) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:139) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1036) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1029) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[?:?]
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[?:?]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809) ~[?:?]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 83 more
+[WARN ] 2020-06-02 08:24:08.621 [RMI TCP Connection(16)-127.0.0.1] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[ERROR] 2020-06-02 08:24:08.627 [RMI TCP Connection(16)-127.0.0.1] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901) ~[eureka-client-1.9.8.jar:1.9.8]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:404) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:139) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1036) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1029) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[?:?]
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[?:?]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809) ~[?:?]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[INFO ] 2020-06-02 08:24:08.643 [RMI TCP Connection(16)-127.0.0.1] DiscoveryClient - Completed shut down of DiscoveryClient
+[INFO ] 2020-06-02 08:24:08.644 [RMI TCP Connection(16)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2020-06-02 08:24:08.647 [RMI TCP Connection(16)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2020-06-02 08:24:08.648 [RMI TCP Connection(16)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:24:08.769 [RMI TCP Connection(16)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[WARN ] 2020-06-02 08:24:08.777 [RMI TCP Connection(16)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.4/java.lang.Thread.run(Thread.java:834)
+[INFO ] 2020-06-02 08:24:08.785 [RMI TCP Connection(16)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:24:08.789 [RMI TCP Connection(16)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:25:47.548 [restartedMain] ScaZuulServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-02 08:25:48.386 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-06-02 08:25:48.400 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+[WARN ] 2020-06-02 08:25:48.739 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[WARN ] 2020-06-02 08:25:48.752 [restartedMain] EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-06-02 08:25:48.939 [restartedMain] GenericScope - BeanFactory id=e40757f5-e351-3df1-9e22-cc40816e3eec
+[INFO ] 2020-06-02 08:25:49.069 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8dda69c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:25:49.200 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a9f46cbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:25:49.651 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8042 (https)
+[INFO ] 2020-06-02 08:25:49.666 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:25:49.677 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-02 08:25:49.678 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-02 08:25:49.813 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-02 08:25:49.813 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 2244 ms
+[WARN ] 2020-06-02 08:25:49.942 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:25:49.942 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-02 08:25:49.953 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@710ca991
+[INFO ] 2020-06-02 08:25:51.368 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-06-02 08:25:55.634 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-06-02 08:25:55.683 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-06-02 08:25:55.732 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-06-02 08:25:55.734 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-06-02 08:25:55.864 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-06-02 08:25:55.958 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO ] 2020-06-02 08:25:56.540 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2020-06-02 08:25:56.739 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2020-06-02 08:25:57.115 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:25:57.121 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN ] 2020-06-02 08:25:57.831 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-06-02 08:25:58.066 [restartedMain] ZuulFilterInitializer - Starting filter initializer
+[INFO ] 2020-06-02 08:25:58.087 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-02 08:25:58.229 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-02 08:25:58.261 [restartedMain] DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2020-06-02 08:25:58.305 [restartedMain] DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:25:58.305 [restartedMain] DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:25:58.397 [restartedMain] DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2020-06-02 08:25:58.397 [restartedMain] DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2020-06-02 08:25:58.543 [restartedMain] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-06-02 08:25:58.712 [restartedMain] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 08:25:58.712 [restartedMain] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 08:25:58.713 [restartedMain] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 08:25:58.713 [restartedMain] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 08:25:58.713 [restartedMain] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 08:25:58.713 [restartedMain] DiscoveryClient - Application version is -1: true
+[INFO ] 2020-06-02 08:25:58.713 [restartedMain] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 08:25:58.879 [restartedMain] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 08:25:58.881 [restartedMain] DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2020-06-02 08:25:58.884 [restartedMain] InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2020-06-02 08:25:58.887 [restartedMain] DiscoveryClient - Discovery Client initialized at timestamp 1591066558886 with initial instances count: 0
+[INFO ] 2020-06-02 08:25:58.897 [restartedMain] EurekaServiceRegistry - Registering application SCA_ZUUL_SERVICE with eureka with status UP
+[INFO ] 2020-06-02 08:25:58.898 [restartedMain] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591066558898, current=UP, previous=STARTING]
+[INFO ] 2020-06-02 08:25:58.900 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:25:58.917 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:25:59.005 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 08:25:59.162 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8042 (https) with context path ''
+[INFO ] 2020-06-02 08:25:59.163 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8042
+[INFO ] 2020-06-02 08:25:59.165 [restartedMain] ScaZuulServiceApplication - Started ScaZuulServiceApplication in 12.714 seconds (JVM running for 13.788)
+[INFO ] 2020-06-02 08:26:28.883 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 08:26:28.883 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 08:26:28.883 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 08:26:28.883 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 08:26:28.883 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 08:26:28.883 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application version is -1: false
+[INFO ] 2020-06-02 08:26:28.883 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 08:26:28.929 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 08:30:58.715 [AsyncResolver-bootstrap-executor-0] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[WARN ] 2020-06-02 08:49:59.609 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m3s858ms504µs200ns).
+[INFO ] 2020-06-02 08:51:01.785 [RMI TCP Connection(20)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-06-02 08:51:01.786 [RMI TCP Connection(20)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_ZUUL_SERVICE with eureka with status DOWN
+[WARN ] 2020-06-02 08:51:01.786 [RMI TCP Connection(20)-127.0.0.1] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591068061786, current=DOWN, previous=UP]
+[INFO ] 2020-06-02 08:51:01.794 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:51:01.800 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 08:51:01.800 [RMI TCP Connection(20)-127.0.0.1] ZuulFilterInitializer - Stopping filter initializer
+[INFO ] 2020-06-02 08:51:01.818 [RMI TCP Connection(20)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-06-02 08:51:01.827 [RMI TCP Connection(20)-127.0.0.1] DiscoveryClient - Shutting down DiscoveryClient ...
+[INFO ] 2020-06-02 08:51:04.829 [RMI TCP Connection(20)-127.0.0.1] DiscoveryClient - Unregistering ...
+[WARN ] 2020-06-02 08:51:04.830 [DiscoveryClient-0] TimedSupervisorTask - task supervisor shutting down, can't accept the task
+[INFO ] 2020-06-02 08:51:04.838 [RMI TCP Connection(20)-127.0.0.1] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - deregister  status: 200
+[INFO ] 2020-06-02 08:51:04.845 [RMI TCP Connection(20)-127.0.0.1] DiscoveryClient - Completed shut down of DiscoveryClient
+[INFO ] 2020-06-02 08:51:04.845 [RMI TCP Connection(20)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2020-06-02 08:51:04.849 [RMI TCP Connection(20)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2020-06-02 08:51:04.851 [RMI TCP Connection(20)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:04.978 [RMI TCP Connection(20)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[WARN ] 2020-06-02 08:51:04.992 [RMI TCP Connection(20)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.4/java.lang.Thread.run(Thread.java:834)
+[INFO ] 2020-06-02 08:51:04.999 [RMI TCP Connection(20)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:05.002 [RMI TCP Connection(20)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:11.436 [restartedMain] ScaZuulServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-02 08:51:12.362 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-06-02 08:51:12.377 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+[WARN ] 2020-06-02 08:51:12.745 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[WARN ] 2020-06-02 08:51:12.759 [restartedMain] EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-06-02 08:51:12.968 [restartedMain] GenericScope - BeanFactory id=e40757f5-e351-3df1-9e22-cc40816e3eec
+[INFO ] 2020-06-02 08:51:13.110 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb16cbbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:51:13.243 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d730ceba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:51:13.774 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8042 (https)
+[INFO ] 2020-06-02 08:51:13.791 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:13.803 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-02 08:51:13.804 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-02 08:51:13.967 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-02 08:51:13.968 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 2509 ms
+[WARN ] 2020-06-02 08:51:14.112 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:51:14.113 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-02 08:51:14.125 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@27d635e2
+[INFO ] 2020-06-02 08:51:15.654 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-06-02 08:51:20.369 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-06-02 08:51:20.434 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-06-02 08:51:20.527 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-06-02 08:51:20.529 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-06-02 08:51:20.764 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-06-02 08:51:21.210 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO ] 2020-06-02 08:51:21.943 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2020-06-02 08:51:22.151 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2020-06-02 08:51:22.501 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:51:22.507 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN ] 2020-06-02 08:51:23.228 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-06-02 08:51:23.476 [restartedMain] ZuulFilterInitializer - Starting filter initializer
+[INFO ] 2020-06-02 08:51:23.497 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-02 08:51:23.649 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-02 08:51:23.687 [restartedMain] DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2020-06-02 08:51:23.733 [restartedMain] DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:51:23.733 [restartedMain] DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:51:23.862 [restartedMain] DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2020-06-02 08:51:23.862 [restartedMain] DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2020-06-02 08:51:24.030 [restartedMain] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-06-02 08:51:24.201 [restartedMain] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 08:51:24.201 [restartedMain] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 08:51:24.201 [restartedMain] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 08:51:24.201 [restartedMain] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 08:51:24.202 [restartedMain] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 08:51:24.202 [restartedMain] DiscoveryClient - Application version is -1: true
+[INFO ] 2020-06-02 08:51:24.202 [restartedMain] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 08:51:24.331 [restartedMain] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 08:51:24.333 [restartedMain] DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2020-06-02 08:51:24.336 [restartedMain] InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2020-06-02 08:51:24.339 [restartedMain] DiscoveryClient - Discovery Client initialized at timestamp 1591068084338 with initial instances count: 1
+[INFO ] 2020-06-02 08:51:24.348 [restartedMain] EurekaServiceRegistry - Registering application SCA_ZUUL_SERVICE with eureka with status UP
+[INFO ] 2020-06-02 08:51:24.349 [restartedMain] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591068084349, current=UP, previous=STARTING]
+[INFO ] 2020-06-02 08:51:24.351 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:51:24.369 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:24.382 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 08:51:24.645 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8042 (https) with context path ''
+[INFO ] 2020-06-02 08:51:24.646 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8042
+[INFO ] 2020-06-02 08:51:24.649 [restartedMain] ScaZuulServiceApplication - Started ScaZuulServiceApplication in 14.518 seconds (JVM running for 15.695)
+[INFO ] 2020-06-02 08:51:40.364 [RMI TCP Connection(6)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-06-02 08:51:40.365 [RMI TCP Connection(6)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_ZUUL_SERVICE with eureka with status DOWN
+[WARN ] 2020-06-02 08:51:40.365 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591068100365, current=DOWN, previous=UP]
+[INFO ] 2020-06-02 08:51:40.375 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:51:40.380 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 08:51:40.380 [RMI TCP Connection(6)-127.0.0.1] ZuulFilterInitializer - Stopping filter initializer
+[INFO ] 2020-06-02 08:51:40.394 [RMI TCP Connection(6)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-06-02 08:51:40.401 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Shutting down DiscoveryClient ...
+[INFO ] 2020-06-02 08:51:43.403 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Unregistering ...
+[INFO ] 2020-06-02 08:51:43.409 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - deregister  status: 200
+[INFO ] 2020-06-02 08:51:43.416 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Completed shut down of DiscoveryClient
+[INFO ] 2020-06-02 08:51:43.416 [RMI TCP Connection(6)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2020-06-02 08:51:43.420 [RMI TCP Connection(6)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2020-06-02 08:51:43.422 [RMI TCP Connection(6)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:43.551 [RMI TCP Connection(6)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[WARN ] 2020-06-02 08:51:43.561 [RMI TCP Connection(6)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.4/java.lang.Thread.run(Thread.java:834)
+[INFO ] 2020-06-02 08:51:43.568 [RMI TCP Connection(6)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:43.571 [RMI TCP Connection(6)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:57.379 [restartedMain] ScaZuulServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-02 08:51:58.346 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-06-02 08:51:58.357 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+[WARN ] 2020-06-02 08:51:58.729 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[WARN ] 2020-06-02 08:51:58.743 [restartedMain] EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-06-02 08:51:58.960 [restartedMain] GenericScope - BeanFactory id=e40757f5-e351-3df1-9e22-cc40816e3eec
+[INFO ] 2020-06-02 08:51:59.097 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9bd7b1e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:51:59.228 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b7f1b4e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 08:51:59.717 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8042 (https)
+[INFO ] 2020-06-02 08:51:59.734 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:51:59.747 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-02 08:51:59.748 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-02 08:51:59.902 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-02 08:51:59.902 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 2502 ms
+[WARN ] 2020-06-02 08:52:00.065 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:52:00.066 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-02 08:52:00.077 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@77338ea8
+[INFO ] 2020-06-02 08:52:01.613 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-06-02 08:52:05.486 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-06-02 08:52:05.532 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-06-02 08:52:05.581 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-06-02 08:52:05.582 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-06-02 08:52:05.732 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-06-02 08:52:05.835 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO ] 2020-06-02 08:52:06.458 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2020-06-02 08:52:06.676 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2020-06-02 08:52:07.007 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 08:52:07.011 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN ] 2020-06-02 08:52:07.761 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-06-02 08:52:08.007 [restartedMain] ZuulFilterInitializer - Starting filter initializer
+[INFO ] 2020-06-02 08:52:08.036 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-02 08:52:08.207 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-02 08:52:08.250 [restartedMain] DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2020-06-02 08:52:08.312 [restartedMain] DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:52:08.312 [restartedMain] DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 08:52:08.437 [restartedMain] DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2020-06-02 08:52:08.437 [restartedMain] DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2020-06-02 08:52:08.597 [restartedMain] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-06-02 08:52:08.766 [restartedMain] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 08:52:08.767 [restartedMain] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 08:52:08.767 [restartedMain] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 08:52:08.767 [restartedMain] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 08:52:08.767 [restartedMain] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 08:52:08.767 [restartedMain] DiscoveryClient - Application version is -1: true
+[INFO ] 2020-06-02 08:52:08.767 [restartedMain] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 08:52:08.850 [restartedMain] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 08:52:08.852 [restartedMain] DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2020-06-02 08:52:08.855 [restartedMain] InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2020-06-02 08:52:08.858 [restartedMain] DiscoveryClient - Discovery Client initialized at timestamp 1591068128857 with initial instances count: 0
+[INFO ] 2020-06-02 08:52:08.867 [restartedMain] EurekaServiceRegistry - Registering application SCA_ZUUL_SERVICE with eureka with status UP
+[INFO ] 2020-06-02 08:52:08.868 [restartedMain] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591068128868, current=UP, previous=STARTING]
+[INFO ] 2020-06-02 08:52:08.871 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:52:08.891 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:52:08.938 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 08:52:09.159 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8042 (https) with context path ''
+[INFO ] 2020-06-02 08:52:09.160 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8042
+[INFO ] 2020-06-02 08:52:09.163 [restartedMain] ScaZuulServiceApplication - Started ScaZuulServiceApplication in 13.04 seconds (JVM running for 14.335)
+[INFO ] 2020-06-02 08:52:18.311 [RMI TCP Connection(6)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-06-02 08:52:18.312 [RMI TCP Connection(6)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_ZUUL_SERVICE with eureka with status DOWN
+[WARN ] 2020-06-02 08:52:18.313 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591068138313, current=DOWN, previous=UP]
+[INFO ] 2020-06-02 08:52:18.318 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 08:52:18.323 [RMI TCP Connection(6)-127.0.0.1] ZuulFilterInitializer - Stopping filter initializer
+[INFO ] 2020-06-02 08:52:18.325 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 08:52:18.338 [RMI TCP Connection(6)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-06-02 08:52:18.346 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Shutting down DiscoveryClient ...
+[INFO ] 2020-06-02 08:52:21.348 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Unregistering ...
+[INFO ] 2020-06-02 08:52:21.355 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - deregister  status: 200
+[INFO ] 2020-06-02 08:52:21.363 [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient - Completed shut down of DiscoveryClient
+[INFO ] 2020-06-02 08:52:21.364 [RMI TCP Connection(6)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2020-06-02 08:52:21.368 [RMI TCP Connection(6)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2020-06-02 08:52:21.370 [RMI TCP Connection(6)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:52:21.531 [RMI TCP Connection(6)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[WARN ] 2020-06-02 08:52:21.539 [RMI TCP Connection(6)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.4/java.lang.Thread.run(Thread.java:834)
+[INFO ] 2020-06-02 08:52:21.543 [RMI TCP Connection(6)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 08:52:21.545 [RMI TCP Connection(6)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 09:06:08.054 [restartedMain] ScaZuulServiceApplication - The following profiles are active: local
+[INFO ] 2020-06-02 09:06:09.004 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-06-02 09:06:09.024 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+[WARN ] 2020-06-02 09:06:09.431 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[WARN ] 2020-06-02 09:06:09.450 [restartedMain] EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-06-02 09:06:09.678 [restartedMain] GenericScope - BeanFactory id=e40757f5-e351-3df1-9e22-cc40816e3eec
+[INFO ] 2020-06-02 09:06:09.828 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$baf62f22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 09:06:09.985 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d710321f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-06-02 09:06:10.551 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8042 (https)
+[INFO ] 2020-06-02 09:06:10.576 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 09:06:10.600 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-06-02 09:06:10.601 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-06-02 09:06:10.760 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-06-02 09:06:10.760 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 2681 ms
+[WARN ] 2020-06-02 09:06:10.948 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 09:06:10.949 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-06-02 09:06:10.981 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7612fbf4
+[INFO ] 2020-06-02 09:06:12.730 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-06-02 09:06:17.973 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-06-02 09:06:18.049 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-06-02 09:06:18.144 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-06-02 09:06:18.146 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-06-02 09:06:18.350 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-06-02 09:06:18.754 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[INFO ] 2020-06-02 09:06:19.461 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2020-06-02 09:06:19.673 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2020-06-02 09:06:20.026 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-06-02 09:06:20.032 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[WARN ] 2020-06-02 09:06:20.756 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 2020-06-02 09:06:21.012 [restartedMain] ZuulFilterInitializer - Starting filter initializer
+[INFO ] 2020-06-02 09:06:21.035 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-06-02 09:06:21.160 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-06-02 09:06:21.195 [restartedMain] DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2020-06-02 09:06:21.238 [restartedMain] DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 09:06:21.238 [restartedMain] DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2020-06-02 09:06:21.381 [restartedMain] DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2020-06-02 09:06:21.381 [restartedMain] DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2020-06-02 09:06:21.579 [restartedMain] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-06-02 09:06:21.738 [restartedMain] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 09:06:21.738 [restartedMain] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 09:06:21.738 [restartedMain] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 09:06:21.738 [restartedMain] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 09:06:21.739 [restartedMain] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 09:06:21.739 [restartedMain] DiscoveryClient - Application version is -1: true
+[INFO ] 2020-06-02 09:06:21.739 [restartedMain] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 09:06:21.827 [restartedMain] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 09:06:21.828 [restartedMain] DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2020-06-02 09:06:21.830 [restartedMain] InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2020-06-02 09:06:21.834 [restartedMain] DiscoveryClient - Discovery Client initialized at timestamp 1591068981832 with initial instances count: 0
+[INFO ] 2020-06-02 09:06:21.843 [restartedMain] EurekaServiceRegistry - Registering application SCA_ZUUL_SERVICE with eureka with status UP
+[INFO ] 2020-06-02 09:06:21.844 [restartedMain] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591068981844, current=UP, previous=STARTING]
+[INFO ] 2020-06-02 09:06:21.846 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 09:06:21.862 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 09:06:21.908 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 09:06:22.115 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8042 (https) with context path ''
+[INFO ] 2020-06-02 09:06:22.116 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8042
+[INFO ] 2020-06-02 09:06:22.118 [restartedMain] ScaZuulServiceApplication - Started ScaZuulServiceApplication in 15.343 seconds (JVM running for 16.719)
+[INFO ] 2020-06-02 09:06:51.831 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-06-02 09:06:51.831 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-06-02 09:06:51.831 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-06-02 09:06:51.831 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application is null : false
+[INFO ] 2020-06-02 09:06:51.831 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-06-02 09:06:51.831 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application version is -1: false
+[INFO ] 2020-06-02 09:06:51.831 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-06-02 09:06:51.877 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - The response status is 200
+[INFO ] 2020-06-02 09:09:37.544 [RMI TCP Connection(13)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-06-02 09:09:37.545 [RMI TCP Connection(13)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_ZUUL_SERVICE with eureka with status DOWN
+[WARN ] 2020-06-02 09:09:37.545 [RMI TCP Connection(13)-127.0.0.1] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1591069177545, current=DOWN, previous=UP]
+[INFO ] 2020-06-02 09:09:37.554 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042: registering service...
+[INFO ] 2020-06-02 09:09:37.559 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-06-02 09:09:37.560 [RMI TCP Connection(13)-127.0.0.1] ZuulFilterInitializer - Stopping filter initializer
+[INFO ] 2020-06-02 09:09:37.575 [RMI TCP Connection(13)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-06-02 09:09:37.583 [RMI TCP Connection(13)-127.0.0.1] DiscoveryClient - Shutting down DiscoveryClient ...
+[INFO ] 2020-06-02 09:09:40.585 [RMI TCP Connection(13)-127.0.0.1] DiscoveryClient - Unregistering ...
+[INFO ] 2020-06-02 09:09:40.590 [RMI TCP Connection(13)-127.0.0.1] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/DESKTOP-UBT55O6:sca_zuul_service:8042 - deregister  status: 200
+[INFO ] 2020-06-02 09:09:40.599 [RMI TCP Connection(13)-127.0.0.1] DiscoveryClient - Completed shut down of DiscoveryClient
+[INFO ] 2020-06-02 09:09:40.600 [RMI TCP Connection(13)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2020-06-02 09:09:40.603 [RMI TCP Connection(13)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2020-06-02 09:09:40.604 [RMI TCP Connection(13)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 09:09:40.727 [RMI TCP Connection(13)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[WARN ] 2020-06-02 09:09:40.736 [RMI TCP Connection(13)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.4/java.lang.Thread.run(Thread.java:834)
+[INFO ] 2020-06-02 09:09:40.742 [RMI TCP Connection(13)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-06-02 09:09:40.747 [RMI TCP Connection(13)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-8042"]

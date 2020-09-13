@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="LOG_PATTERN">[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</Property>
+		<Property name="LOG_PATH">${env:API_LOGS_ROOT_DIR:-logs/}</Property>
+		<Property name="LOG_FILE_NAME">sca_file_exchange_service</Property>
+	</Properties>
+	<Appenders>
+		<Console name="console-log" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="${LOG_PATTERN}" />
+		</Console>
+		<RollingFile name="trace-log"
+			fileName="${LOG_PATH}/${LOG_FILE_NAME}.log"
+			filePattern="${LOG_PATH}/${LOG_FILE_NAME}-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>${LOG_PATTERN}</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.sca" additivity="false">
+			<appender-ref ref="console-log" />
+			<appender-ref ref="trace-log" />
+		</Logger>
+		<Root additivity="false">
+			<AppenderRef ref="console-log" />
+			<AppenderRef ref="trace-log" />
+		</Root>
+	</Loggers>
+</Configuration>

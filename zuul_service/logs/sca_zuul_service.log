@@ -1,0 +1,681 @@
+[INFO ] 2020-08-10 15:05:14.252 [restartedMain] ScaZuulServiceApplication - The following profiles are active: local
+[INFO ] 2020-08-10 15:05:16.219 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+[INFO ] 2020-08-10 15:05:16.241 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+[WARN ] 2020-08-10 15:05:17.054 [restartedMain] EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[WARN ] 2020-08-10 15:05:17.084 [restartedMain] EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[INFO ] 2020-08-10 15:05:17.598 [restartedMain] GenericScope - BeanFactory id=e40757f5-e351-3df1-9e22-cc40816e3eec
+[INFO ] 2020-08-10 15:05:17.897 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f9d07a5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-08-10 15:05:18.260 [restartedMain] PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$15ea7d59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-08-10 15:05:19.264 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8042 (https)
+[INFO ] 2020-08-10 15:05:19.291 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-08-10 15:05:19.313 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2020-08-10 15:05:19.314 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+[INFO ] 2020-08-10 15:05:19.641 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-08-10 15:05:19.641 [restartedMain] ContextLoader - Root WebApplicationContext: initialization completed in 5330 ms
+[WARN ] 2020-08-10 15:05:19.950 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-08-10 15:05:19.951 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-08-10 15:05:19.976 [restartedMain] DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7566e2d8
+[INFO ] 2020-08-10 15:05:23.617 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2020-08-10 15:05:23.872 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2020-08-10 15:05:23.974 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[INFO ] 2020-08-10 15:05:24.075 [restartedMain] Version - HHH000412: Hibernate Core {5.3.10.Final}
+[INFO ] 2020-08-10 15:05:24.081 [restartedMain] Environment - HHH000206: hibernate.properties not found
+[INFO ] 2020-08-10 15:05:24.358 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[INFO ] 2020-08-10 15:05:24.562 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO ] 2020-08-10 15:05:24.817 [restartedMain] LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO ] 2020-08-10 15:05:24.825 [restartedMain] BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ae1171c
+[INFO ] 2020-08-10 15:05:26.506 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2020-08-10 15:05:26.712 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2020-08-10 15:05:27.269 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 2020-08-10 15:05:33.080 [restartedMain] URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[INFO ] 2020-08-10 15:05:33.083 [restartedMain] URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[INFO ] 2020-08-10 15:05:35.215 [restartedMain] ZuulFilterInitializer - Starting filter initializer
+[INFO ] 2020-08-10 15:05:35.232 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2020-08-10 15:05:35.596 [restartedMain] InstanceInfoFactory - Setting initial instance status as: STARTING
+[INFO ] 2020-08-10 15:05:35.685 [restartedMain] DiscoveryClient - Initializing Eureka in region us-east-1
+[INFO ] 2020-08-10 15:05:35.787 [restartedMain] DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+[INFO ] 2020-08-10 15:05:35.787 [restartedMain] DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+[INFO ] 2020-08-10 15:05:36.103 [restartedMain] DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+[INFO ] 2020-08-10 15:05:36.103 [restartedMain] DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+[INFO ] 2020-08-10 15:05:36.455 [restartedMain] ConfigClusterResolver - Resolving eureka endpoints via configuration
+[INFO ] 2020-08-10 15:05:36.891 [restartedMain] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-08-10 15:05:36.892 [restartedMain] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-08-10 15:05:36.892 [restartedMain] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-08-10 15:05:36.892 [restartedMain] DiscoveryClient - Application is null : false
+[INFO ] 2020-08-10 15:05:36.893 [restartedMain] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-08-10 15:05:36.893 [restartedMain] DiscoveryClient - Application version is -1: true
+[INFO ] 2020-08-10 15:05:36.893 [restartedMain] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-08-10 15:05:37.392 [restartedMain] DiscoveryClient - The response status is 200
+[INFO ] 2020-08-10 15:05:37.396 [restartedMain] DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+[INFO ] 2020-08-10 15:05:37.404 [restartedMain] InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[INFO ] 2020-08-10 15:05:37.416 [restartedMain] DiscoveryClient - Discovery Client initialized at timestamp 1597052137413 with initial instances count: 0
+[INFO ] 2020-08-10 15:05:37.442 [restartedMain] EurekaServiceRegistry - Registering application SCA_ZUUL_SERVICE with eureka with status UP
+[INFO ] 2020-08-10 15:05:37.444 [restartedMain] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1597052137444, current=UP, previous=STARTING]
+[INFO ] 2020-08-10 15:05:37.450 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/192.168.1.9:sca_zuul_service:8042: registering service...
+[INFO ] 2020-08-10 15:05:37.501 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-08-10 15:05:37.951 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/192.168.1.9:sca_zuul_service:8042 - registration status: 204
+[INFO ] 2020-08-10 15:05:38.663 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8042 (https) with context path ''
+[INFO ] 2020-08-10 15:05:38.666 [restartedMain] EurekaAutoServiceRegistration - Updating port to 8042
+[INFO ] 2020-08-10 15:05:38.672 [restartedMain] ScaZuulServiceApplication - Started ScaZuulServiceApplication in 27.979 seconds (JVM running for 30.705)
+[INFO ] 2020-08-10 15:06:07.398 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Disable delta property : false
+[INFO ] 2020-08-10 15:06:07.398 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Single vip registry refresh property : null
+[INFO ] 2020-08-10 15:06:07.399 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Force full registry fetch : false
+[INFO ] 2020-08-10 15:06:07.399 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application is null : false
+[INFO ] 2020-08-10 15:06:07.401 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Registered Applications size is zero : true
+[INFO ] 2020-08-10 15:06:07.402 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Application version is -1: false
+[INFO ] 2020-08-10 15:06:07.404 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - Getting all instance registry info from the eureka server
+[INFO ] 2020-08-10 15:06:07.608 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - The response status is 200
+[INFO ] 2020-08-10 15:06:37.893 [https-jsse-nio-8042-exec-9] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2020-08-10 15:06:37.893 [https-jsse-nio-8042-exec-9] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2020-08-10 15:06:37.926 [https-jsse-nio-8042-exec-9] DispatcherServlet - Completed initialization in 33 ms
+[INFO ] 2020-08-10 15:06:38.512 [https-jsse-nio-8042-exec-9] ChainedDynamicProperty - Flipping property: sca_notification_service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO ] 2020-08-10 15:06:38.597 [https-jsse-nio-8042-exec-9] ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-sca_notification_service
+[INFO ] 2020-08-10 15:06:38.599 [https-jsse-nio-8042-exec-9] BaseLoadBalancer - Client: sca_notification_service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sca_notification_service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[INFO ] 2020-08-10 15:06:38.614 [https-jsse-nio-8042-exec-9] DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+[INFO ] 2020-08-10 15:06:38.742 [https-jsse-nio-8042-exec-9] ChainedDynamicProperty - Flipping property: sca_notification_service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[INFO ] 2020-08-10 15:06:38.745 [https-jsse-nio-8042-exec-9] DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client sca_notification_service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sca_notification_service,current list of Servers=[localhost:8049],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:8049;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 00:00:00 UTC 1970;	First connection made: Thu Jan 01 00:00:00 UTC 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@174eb163
+[INFO ] 2020-08-10 15:06:39.628 [PollingServerListUpdater-0] ChainedDynamicProperty - Flipping property: sca_notification_service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[DEBUG] 2020-08-10 15:06:40.161 [https-jsse-nio-8042-exec-9] CommonService - saveUserEvent queueMessage:QueueGenericMessage [messageHeader=MessageHeader [sourceApplciation=sca_zuul_service, requestedOn=java.util.GregorianCalendar[time=1597052200131,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=7,WEEK_OF_YEAR=33,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=223,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=9,HOUR_OF_DAY=9,MINUTE=36,SECOND=40,MILLISECOND=131,ZONE_OFFSET=0,DST_OFFSET=0], action=SAVE_USER_EVENT], messageBody=MessageBody [bodyParams=[com.sca.common.message.MessageBodyParam@2916265]]]
+[DEBUG] 2020-08-10 15:06:40.196 [https-jsse-nio-8042-exec-9] CommonService - queueMessage json string:{"messageHeader":{"sourceApplciation":"sca_zuul_service","requestedOn":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":36,"second":40},"userId":1,"action":"SAVE_USER_EVENT"},"messageBody":{"bodyParams":[{"name":"userEvent","type":"UserEvent","value":{"clientIpAddress":"0:0:0:0:0:0:0:1","userId":1,"scaServiceUrl":"https://localhost:8042/api/sca-notification/order-notifications/notification","scaServiceHttpMethod":"POST","scaServiceRequest":"{\r\n       \"orderId\": 3,\r\n        \"scaUserId\": 1,\r\n        \"userId\":2,\r\n        \"email\": \"asdf@gmail.com\",\r\n        \"wmqId\":\"asdfsdf\",\r\n        \"firstName\": \"asdfasdf\",\r\n        \"lastName\": \"abced\",\r\n        \"phoneNo\": \"3434343434\",\r\n        \"is24Hour\": false,\r\n        \"primary\": false,\r\n        \"shareProject\": false,\r\n        \"dndDisturb\": false,\r\n        \"billingRelated\": false,\r\n        \"engineer\": false,\r\n        \"shippingRelated\": true,\r\n        \"pcbDesigner\": false,\r\n        \"qualityControlRelated\": false\r\n    }","scaServiceResponse":"{\"success\":true,\"message\":{\"orderNotificationId\":17,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"asdfsdf\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},\"additionalData\":null,\"errors\":null}","serviceRequestStatus":true,"createdDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":36,"second":38},"updatedDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":36,"second":40}}}]}}
+[DEBUG] 2020-08-10 15:06:40.196 [https-jsse-nio-8042-exec-9] CommonService - Sending message to queue
+[INFO ] 2020-08-10 15:06:40.201 [https-jsse-nio-8042-exec-9] CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+[INFO ] 2020-08-10 15:06:42.947 [https-jsse-nio-8042-exec-9] CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4c5777b7:0/SimpleConnection@348eb60d [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59405]
+[DEBUG] 2020-08-10 15:06:44.030 [https-jsse-nio-8042-exec-9] CommonService - Sent the message to queue
+[DEBUG] 2020-08-10 15:07:05.404 [https-jsse-nio-8042-exec-10] CommonService - saveUserEvent queueMessage:QueueGenericMessage [messageHeader=MessageHeader [sourceApplciation=sca_zuul_service, requestedOn=java.util.GregorianCalendar[time=1597052225403,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=7,WEEK_OF_YEAR=33,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=223,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=9,HOUR_OF_DAY=9,MINUTE=37,SECOND=5,MILLISECOND=403,ZONE_OFFSET=0,DST_OFFSET=0], action=SAVE_USER_EVENT], messageBody=MessageBody [bodyParams=[com.sca.common.message.MessageBodyParam@3e8faf58]]]
+[DEBUG] 2020-08-10 15:07:05.409 [https-jsse-nio-8042-exec-10] CommonService - queueMessage json string:{"messageHeader":{"sourceApplciation":"sca_zuul_service","requestedOn":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":5},"userId":1,"action":"SAVE_USER_EVENT"},"messageBody":{"bodyParams":[{"name":"userEvent","type":"UserEvent","value":{"clientIpAddress":"0:0:0:0:0:0:0:1","userId":1,"scaServiceUrl":"https://localhost:8042/api/sca-notification/order-notifications/notification","scaServiceHttpMethod":"PUT","scaServiceRequest":"{\r\n        \"orderNotificationId\": 17,\r\n       \"orderId\": 3,\r\n        \"scaUserId\": 1,\r\n        \"userId\":2,\r\n        \"email\": \"asdf@gmail.com\",\r\n        \"wmqId\":\"\",\r\n        \"firstName\": \"asdfasdf\",\r\n        \"lastName\": \"abced\",\r\n        \"phoneNo\": \"3434343434\",\r\n        \"is24Hour\": false,\r\n        \"primary\": false,\r\n        \"shareProject\": false,\r\n        \"dndDisturb\": false,\r\n        \"billingRelated\": false,\r\n        \"engineer\": false,\r\n        \"shippingRelated\": true,\r\n        \"pcbDesigner\": false,\r\n        \"qualityControlRelated\": false\r\n    }","scaServiceResponse":"{\"success\":false,\"message\":null,\"additionalData\":null,\"errors\":[{\"code\":10003,\"message\":\"WmqId cannot be empty\",\"args\":null}]}","serviceRequestStatus":true,"createdDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":5},"updatedDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":5}}}]}}
+[DEBUG] 2020-08-10 15:07:05.410 [https-jsse-nio-8042-exec-10] CommonService - Sending message to queue
+[DEBUG] 2020-08-10 15:07:05.411 [https-jsse-nio-8042-exec-10] CommonService - Sent the message to queue
+[DEBUG] 2020-08-10 15:07:20.324 [https-jsse-nio-8042-exec-1] CommonService - saveUserEvent queueMessage:QueueGenericMessage [messageHeader=MessageHeader [sourceApplciation=sca_zuul_service, requestedOn=java.util.GregorianCalendar[time=1597052240324,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=7,WEEK_OF_YEAR=33,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=223,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=9,HOUR_OF_DAY=9,MINUTE=37,SECOND=20,MILLISECOND=324,ZONE_OFFSET=0,DST_OFFSET=0], action=SAVE_USER_EVENT], messageBody=MessageBody [bodyParams=[com.sca.common.message.MessageBodyParam@72daeda9]]]
+[DEBUG] 2020-08-10 15:07:20.329 [https-jsse-nio-8042-exec-1] CommonService - queueMessage json string:{"messageHeader":{"sourceApplciation":"sca_zuul_service","requestedOn":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":20},"userId":1,"action":"SAVE_USER_EVENT"},"messageBody":{"bodyParams":[{"name":"userEvent","type":"UserEvent","value":{"clientIpAddress":"0:0:0:0:0:0:0:1","userId":1,"scaServiceUrl":"https://localhost:8042/api/sca-notification/order-notifications/notification","scaServiceHttpMethod":"PUT","scaServiceRequest":"{\r\n        \"orderNotificationId\": 17,\r\n       \"orderId\": 3,\r\n        \"scaUserId\": 1,\r\n        \"userId\":2,\r\n        \"email\": \"asdf@gmail.com\",\r\n        \"wmqId\":\"bbc\",\r\n        \"firstName\": \"asdfasdf\",\r\n        \"lastName\": \"abced\",\r\n        \"phoneNo\": \"3434343434\",\r\n        \"is24Hour\": false,\r\n        \"primary\": false,\r\n        \"shareProject\": false,\r\n        \"dndDisturb\": false,\r\n        \"billingRelated\": false,\r\n        \"engineer\": false,\r\n        \"shippingRelated\": true,\r\n        \"pcbDesigner\": false,\r\n        \"qualityControlRelated\": false\r\n    }","scaServiceResponse":"{\"success\":true,\"message\":{\"orderNotificationId\":17,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"bbc\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},\"additionalData\":null,\"errors\":null}","serviceRequestStatus":true,"createdDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":20},"updatedDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":20}}}]}}
+[DEBUG] 2020-08-10 15:07:20.329 [https-jsse-nio-8042-exec-1] CommonService - Sending message to queue
+[DEBUG] 2020-08-10 15:07:20.330 [https-jsse-nio-8042-exec-1] CommonService - Sent the message to queue
+[DEBUG] 2020-08-10 15:07:34.859 [https-jsse-nio-8042-exec-2] CommonService - saveUserEvent queueMessage:QueueGenericMessage [messageHeader=MessageHeader [sourceApplciation=sca_zuul_service, requestedOn=java.util.GregorianCalendar[time=1597052254859,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=7,WEEK_OF_YEAR=33,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=223,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=9,HOUR_OF_DAY=9,MINUTE=37,SECOND=34,MILLISECOND=859,ZONE_OFFSET=0,DST_OFFSET=0], action=SAVE_USER_EVENT], messageBody=MessageBody [bodyParams=[com.sca.common.message.MessageBodyParam@46491f80]]]
+[DEBUG] 2020-08-10 15:07:34.863 [https-jsse-nio-8042-exec-2] CommonService - queueMessage json string:{"messageHeader":{"sourceApplciation":"sca_zuul_service","requestedOn":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":34},"userId":1,"action":"SAVE_USER_EVENT"},"messageBody":{"bodyParams":[{"name":"userEvent","type":"UserEvent","value":{"clientIpAddress":"0:0:0:0:0:0:0:1","userId":1,"scaServiceUrl":"https://localhost:8042/api/sca-notification/order-notifications/notification?wmqId=wewe&orderId=0","scaServiceHttpMethod":"GET","scaServiceResponse":"{\"success\":true,\"message\":{\"orderNotifications\":null},\"additionalData\":null,\"errors\":null}","serviceRequestStatus":true,"createdDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":34},"updatedDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":34}}}]}}
+[DEBUG] 2020-08-10 15:07:34.863 [https-jsse-nio-8042-exec-2] CommonService - Sending message to queue
+[DEBUG] 2020-08-10 15:07:34.863 [https-jsse-nio-8042-exec-2] CommonService - Sent the message to queue
+[DEBUG] 2020-08-10 15:07:41.450 [https-jsse-nio-8042-exec-4] CommonService - saveUserEvent queueMessage:QueueGenericMessage [messageHeader=MessageHeader [sourceApplciation=sca_zuul_service, requestedOn=java.util.GregorianCalendar[time=1597052261450,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=7,WEEK_OF_YEAR=33,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=223,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=9,HOUR_OF_DAY=9,MINUTE=37,SECOND=41,MILLISECOND=450,ZONE_OFFSET=0,DST_OFFSET=0], action=SAVE_USER_EVENT], messageBody=MessageBody [bodyParams=[com.sca.common.message.MessageBodyParam@6f06867f]]]
+[DEBUG] 2020-08-10 15:07:41.456 [https-jsse-nio-8042-exec-4] CommonService - queueMessage json string:{"messageHeader":{"sourceApplciation":"sca_zuul_service","requestedOn":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":41},"userId":1,"action":"SAVE_USER_EVENT"},"messageBody":{"bodyParams":[{"name":"userEvent","type":"UserEvent","value":{"clientIpAddress":"0:0:0:0:0:0:0:1","userId":1,"scaServiceUrl":"https://localhost:8042/api/sca-notification/order-notifications/notification?wmqId=bbc&orderId=0","scaServiceHttpMethod":"GET","scaServiceResponse":"{\"success\":true,\"message\":{\"orderNotifications\":[{\"orderNotificationId\":16,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"bbc\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":17,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"bbc\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false}]},\"additionalData\":null,\"errors\":null}","serviceRequestStatus":true,"createdDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":41},"updatedDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":41}}}]}}
+[DEBUG] 2020-08-10 15:07:41.456 [https-jsse-nio-8042-exec-4] CommonService - Sending message to queue
+[DEBUG] 2020-08-10 15:07:41.457 [https-jsse-nio-8042-exec-4] CommonService - Sent the message to queue
+[DEBUG] 2020-08-10 15:07:53.172 [https-jsse-nio-8042-exec-3] CommonService - saveUserEvent queueMessage:QueueGenericMessage [messageHeader=MessageHeader [sourceApplciation=sca_zuul_service, requestedOn=java.util.GregorianCalendar[time=1597052273172,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=7,WEEK_OF_YEAR=33,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=223,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=9,HOUR_OF_DAY=9,MINUTE=37,SECOND=53,MILLISECOND=172,ZONE_OFFSET=0,DST_OFFSET=0], action=SAVE_USER_EVENT], messageBody=MessageBody [bodyParams=[com.sca.common.message.MessageBodyParam@4f74b900]]]
+[DEBUG] 2020-08-10 15:07:53.175 [https-jsse-nio-8042-exec-3] CommonService - queueMessage json string:{"messageHeader":{"sourceApplciation":"sca_zuul_service","requestedOn":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":53},"userId":1,"action":"SAVE_USER_EVENT"},"messageBody":{"bodyParams":[{"name":"userEvent","type":"UserEvent","value":{"clientIpAddress":"0:0:0:0:0:0:0:1","userId":1,"scaServiceUrl":"https://localhost:8042/api/sca-notification/order-notifications/notification?wmqId=bbc&orderId=3","scaServiceHttpMethod":"GET","scaServiceResponse":"{\"success\":true,\"message\":{\"orderNotifications\":[{\"orderNotificationId\":2,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"sdsd\",\"email\":\"ad@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":12,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"sdsd\",\"email\":\"ad@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":13,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"sdeef23\",\"email\":\"ad@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":14,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"sdeef23\",\"email\":\"ad@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":15,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"asdfsdf\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":16,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"bbc\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":17,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"bbc\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false}]},\"additionalData\":null,\"errors\":null}","serviceRequestStatus":true,"createdDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":53},"updatedDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":37,"second":53}}}]}}
+[DEBUG] 2020-08-10 15:07:53.176 [https-jsse-nio-8042-exec-3] CommonService - Sending message to queue
+[DEBUG] 2020-08-10 15:07:53.177 [https-jsse-nio-8042-exec-3] CommonService - Sent the message to queue
+[DEBUG] 2020-08-10 15:08:13.943 [https-jsse-nio-8042-exec-5] CommonService - saveUserEvent queueMessage:QueueGenericMessage [messageHeader=MessageHeader [sourceApplciation=sca_zuul_service, requestedOn=java.util.GregorianCalendar[time=1597052293942,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2020,MONTH=7,WEEK_OF_YEAR=33,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=223,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=9,HOUR_OF_DAY=9,MINUTE=38,SECOND=13,MILLISECOND=942,ZONE_OFFSET=0,DST_OFFSET=0], action=SAVE_USER_EVENT], messageBody=MessageBody [bodyParams=[com.sca.common.message.MessageBodyParam@715dec68]]]
+[DEBUG] 2020-08-10 15:08:13.947 [https-jsse-nio-8042-exec-5] CommonService - queueMessage json string:{"messageHeader":{"sourceApplciation":"sca_zuul_service","requestedOn":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":38,"second":13},"userId":1,"action":"SAVE_USER_EVENT"},"messageBody":{"bodyParams":[{"name":"userEvent","type":"UserEvent","value":{"clientIpAddress":"0:0:0:0:0:0:0:1","userId":1,"scaServiceUrl":"https://localhost:8042/api/sca-notification/order-notifications/notification?wmqId=bbc&orderId=0","scaServiceHttpMethod":"GET","scaServiceResponse":"{\"success\":true,\"message\":{\"orderNotifications\":[{\"orderNotificationId\":16,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"bbc\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false},{\"orderNotificationId\":17,\"orderId\":3,\"scaUserId\":1,\"userId\":2,\"wmqId\":\"bbc\",\"email\":\"asdf@gmail.com\",\"firstName\":\"asdfasdf\",\"lastName\":\"abced\",\"phoneNo\":\"3434343434\",\"is24Hour\":false,\"primary\":false,\"qualityControlRelated\":false,\"dndDisturb\":false,\"shareProject\":false,\"shippingRelated\":true,\"billingRelated\":false,\"pcbDesigner\":false,\"engineer\":false}]},\"additionalData\":null,\"errors\":null}","serviceRequestStatus":true,"createdDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":38,"second":13},"updatedDate":{"year":2020,"month":7,"dayOfMonth":10,"hourOfDay":9,"minute":38,"second":13}}}]}}
+[DEBUG] 2020-08-10 15:08:13.948 [https-jsse-nio-8042-exec-5] CommonService - Sending message to queue
+[DEBUG] 2020-08-10 15:08:13.948 [https-jsse-nio-8042-exec-5] CommonService - Sent the message to queue
+[ERROR] 2020-08-10 15:08:41.528 [DiscoveryClient-HeartbeatExecutor-0] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:608) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 26 more
+[WARN ] 2020-08-10 15:08:41.564 [DiscoveryClient-HeartbeatExecutor-0] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[ERROR] 2020-08-10 15:08:41.683 [DiscoveryClient-CacheRefreshExecutor-0] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:608) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 29 more
+[WARN ] 2020-08-10 15:08:41.687 [DiscoveryClient-CacheRefreshExecutor-0] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[ERROR] 2020-08-10 15:08:45.589 [DiscoveryClient-HeartbeatExecutor-0] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:608) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 more
+[WARN ] 2020-08-10 15:08:45.596 [DiscoveryClient-HeartbeatExecutor-0] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[ERROR] 2020-08-10 15:08:45.602 [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/192.168.1.9:sca_zuul_service:8042 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2020-08-10 15:08:45.712 [DiscoveryClient-CacheRefreshExecutor-0] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:608) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 more
+[WARN ] 2020-08-10 15:08:45.717 [DiscoveryClient-CacheRefreshExecutor-0] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[ERROR] 2020-08-10 15:08:45.719 [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/192.168.1.9:sca_zuul_service:8042 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1479) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1446) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[INFO ] 2020-08-10 15:08:56.509 [RMI TCP Connection(10)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2020-08-10 15:08:56.510 [RMI TCP Connection(10)-127.0.0.1] EurekaServiceRegistry - Unregistering application SCA_ZUUL_SERVICE with eureka with status DOWN
+[WARN ] 2020-08-10 15:08:56.510 [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1597052336510, current=DOWN, previous=UP]
+[INFO ] 2020-08-10 15:08:56.513 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/192.168.1.9:sca_zuul_service:8042: registering service...
+[INFO ] 2020-08-10 15:08:56.523 [RMI TCP Connection(10)-127.0.0.1] ZuulFilterInitializer - Stopping filter initializer
+[INFO ] 2020-08-10 15:08:56.529 [RMI TCP Connection(10)-127.0.0.1] ShutdownEnabledTimer - Shutdown hook removed for: NFLoadBalancer-PingTimer-sca_notification_service
+[INFO ] 2020-08-10 15:08:56.554 [RMI TCP Connection(10)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2020-08-10 15:08:56.725 [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient - Shutting down DiscoveryClient ...
+[INFO ] 2020-08-10 15:08:59.727 [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient - Unregistering ...
+[ERROR] 2020-08-10 15:09:00.529 [DiscoveryClient-InstanceInfoReplicator-0] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:608) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 29 more
+[WARN ] 2020-08-10 15:09:00.535 [DiscoveryClient-InstanceInfoReplicator-0] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[WARN ] 2020-08-10 15:09:00.539 [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/192.168.1.9:sca_zuul_service:8042 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[WARN ] 2020-08-10 15:09:00.544 [DiscoveryClient-InstanceInfoReplicator-0] InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.8.jar:1.9.8]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2020-08-10 15:09:03.737 [RMI TCP Connection(10)-127.0.0.1] RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8041/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901) ~[eureka-client-1.9.8.jar:1.9.8]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:404) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:139) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1036) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1029) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor64.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[?:?]
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[?:?]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809) ~[?:?]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:608) ~[?:?]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.9.jar:4.5.9]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.9.jar:4.5.9]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 82 more
+[WARN ] 2020-08-10 15:09:03.742 [RMI TCP Connection(10)-127.0.0.1] RetryableEurekaHttpClient - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+[ERROR] 2020-08-10 15:09:03.745 [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient - DiscoveryClient_SCA_ZUUL_SERVICE/192.168.1.9:sca_zuul_service:8042 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:923) ~[eureka-client-1.9.8.jar:1.9.8]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:901) ~[eureka-client-1.9.8.jar:1.9.8]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:404) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:139) ~[spring-cloud-context-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1036) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1029) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor64.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[?:?]
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[?:?]
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[?:?]
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[?:?]
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[?:?]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809) ~[?:?]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399) ~[?:?]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:?]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+[INFO ] 2020-08-10 15:09:03.770 [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient - Completed shut down of DiscoveryClient
+[INFO ] 2020-08-10 15:09:03.771 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2020-08-10 15:09:03.777 [RMI TCP Connection(10)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2020-08-10 15:09:03.780 [RMI TCP Connection(10)-127.0.0.1] Http11NioProtocol - Pausing ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-08-10 15:09:04.170 [RMI TCP Connection(10)-127.0.0.1] StandardService - Stopping service [Tomcat]
+[INFO ] 2020-08-10 15:09:04.174 [RMI TCP Connection(10)-127.0.0.1] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[WARN ] 2020-08-10 15:09:04.183 [RMI TCP Connection(10)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.7/java.lang.Thread.run(Thread.java:834)
+[WARN ] 2020-08-10 15:09:04.185 [RMI TCP Connection(10)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [expiringMap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.7/java.lang.Thread.run(Thread.java:834)
+[WARN ] 2020-08-10 15:09:04.189 [RMI TCP Connection(10)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.7/java.lang.Thread.run(Thread.java:834)
+[WARN ] 2020-08-10 15:09:04.193 [RMI TCP Connection(10)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [DataPublisher] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.7/java.lang.Thread.run(Thread.java:834)
+[WARN ] 2020-08-10 15:09:04.196 [RMI TCP Connection(10)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.7/java.lang.Thread.run(Thread.java:834)
+[WARN ] 2020-08-10 15:09:04.199 [RMI TCP Connection(10)-127.0.0.1] WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [PollingServerListUpdater-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+ java.base@11.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.7/java.lang.Thread.run(Thread.java:834)
+[INFO ] 2020-08-10 15:09:04.204 [RMI TCP Connection(10)-127.0.0.1] Http11NioProtocol - Stopping ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-08-10 15:09:04.212 [RMI TCP Connection(10)-127.0.0.1] Http11NioProtocol - Destroying ProtocolHandler ["https-jsse-nio-8042"]
+[INFO ] 2020-08-10 15:09:04.214 [Thread-16] PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
